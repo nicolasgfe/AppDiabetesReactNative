@@ -1,12 +1,13 @@
 import React from "react"
-import { Text, View } from "react-native"
+import { View } from "react-native"
+import { Label } from "./Style";
 
 const HomeScreen = () => {
-   return(
-      <View>
-         <Text> Home Screen </Text>
-      </View>
-   )
+  return(
+    <View>
+      <Label> GLICEMIA - ÚLTIMA MEDIÇÃO </Label>
+    </View>
+  )
 }
 
 export default HomeScreen;
