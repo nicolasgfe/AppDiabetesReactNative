@@ -1,11 +1,12 @@
 import React from "react"
 import { View } from "react-native"
 import { Label } from "./Style";
+import { Text } from "native-base";
 
 const HomeScreen = () => {
   return(
     <View>
-      <Label> GLICEMIA - ÚLTIMA MEDIÇÃO </Label>
+      <Text> GLICEMIA - ÚLTIMA MEDIÇÃO </Text>
     </View>
   )
 }
