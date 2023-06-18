@@ -2,6 +2,7 @@ import { NativeStackNavigationOptions, createNativeStackNavigator } from "@react
 import { AppStackParamList } from "./interface"
 import { useTheme } from "native-base"
 import HomeScreen from "../screens/Home/HomeScreen"
+import GlucosaScreen from "../screens/Glucosa/GlucosaScreen"
 import { HistoryScreen } from "../screens/HistoryScreen/HistoryScreen"
 
 const Stack = createNativeStackNavigator<AppStackParamList>()
@@ -20,6 +21,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="HistoryScreen" component={HistoryScreen}/>
         {/* <Stack.Screen name="Register" component={RegisterScreen}/> */}
+        {/*<Stack.Screen name='Glucose' component={GlucosaScreen}/> */}
       </Stack.Navigator>
   )
 }
