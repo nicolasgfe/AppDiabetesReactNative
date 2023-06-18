@@ -16,7 +16,7 @@ const AppNavigator = () => {
       headerTintColor: '#ffffff'
   }
   return(
-      <Stack.Navigator screenOptions={navigatorScreenOptions} initialRouteName="HistoryScreen">
+      <Stack.Navigator screenOptions={navigatorScreenOptions} initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="HistoryScreen" component={HistoryScreen}/>
         {/* <Stack.Screen name="Register" component={RegisterScreen}/> */}
