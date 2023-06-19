@@ -1,6 +1,8 @@
 import React from "react"
 import { Container, Title, Label, MainBox, TipsBox, LinksContainer } from "./Style";
 import { Link,Text,  Spacer } from "native-base";
+import ExercisesHintScreen from "../HintScreenExercises/ExerciseHintScreen";
+import NutritionHintScreen from "../HintScreen/NutritionHintScreen";
 
 const HomeScreen = () => {
   return(
@@ -20,10 +22,14 @@ const HomeScreen = () => {
       </LinksContainer>
 
       <Label>   Dicas de exercícios:</Label>
-      <TipsBox></TipsBox>
+      <TipsBox>
+        <ExercisesHintScreen />
+      </TipsBox>
 
       <Label>Dicas de nutrição:</Label>
-      <TipsBox></TipsBox>
+      <TipsBox>
+        <NutritionHintScreen />
+      </TipsBox>
     </Container>
     </>
   )
