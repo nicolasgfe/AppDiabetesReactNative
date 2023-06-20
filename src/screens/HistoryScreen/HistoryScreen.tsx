@@ -3,6 +3,7 @@ import React from "react"
 import { FlatList, Text, View } from "native-base"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { Item } from "../components"
+import { Container } from "../Home/Style"
 
 const HistoryScreen = () => {
   const data = [
@@ -24,14 +25,18 @@ const HistoryScreen = () => {
   ]
   
   return (
-    <SafeAreaView >
-      <FlatList
-        data={data}
-        renderItem={({item}) => <Item medida={item.medida} date={item.date}/>}
-        keyExtractor={item => item.id}
-      />
-      
-    </SafeAreaView>
+  <>
+    <Container>
+      <SafeAreaView >
+        <FlatList
+          data={data}
+          renderItem={({item}) => <Item medida={item.medida} date={item.date}/>}
+          keyExtractor={item => item.id}
+        />
+        
+      </SafeAreaView>
+    </Container>
+  </>
   );
 
   // return(
@@ -45,6 +50,7 @@ const HistoryScreen = () => {
   //     })}
   //   </>
   // )
+  
 }
 
 export {
