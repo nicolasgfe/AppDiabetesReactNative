@@ -1,14 +1,16 @@
 import React from "react"
 import { Container, Title, Label, MainBox, TipsBox, LinksContainer } from "./Style";
-import { Link, Spacer } from "native-base";
-import { Fonts } from "../../assets/fonts/GoogleFonts";
+import { Link,Text,  Spacer } from "native-base";
+import ExercisesHintScreen from "../HintScreenExercises/ExerciseHintScreen";
+import NutritionHintScreen from "../HintScreen/NutritionHintScreen";
 
 const HomeScreen = () => {
   return(
+    <>
+    <Text> GLICEMIA - ÚLTIMA MEDIÇÃO </Text>
     <Container>
-      <Fonts>
       <Title> GLICEMIA - ÚLTIMA MEDIÇÃO </Title>
-      </Fonts>
+
       <MainBox>
       
       </MainBox>
@@ -20,11 +22,16 @@ const HomeScreen = () => {
       </LinksContainer>
 
       <Label>   Dicas de exercícios:</Label>
-      <TipsBox></TipsBox>
+      <TipsBox>
+        <ExercisesHintScreen />
+      </TipsBox>
 
       <Label>Dicas de nutrição:</Label>
-      <TipsBox></TipsBox>
+      <TipsBox>
+        <NutritionHintScreen />
+      </TipsBox>
     </Container>
+    </>
   )
 }
 
