@@ -5,7 +5,6 @@ import HomeScreen from "../screens/Home/HomeScreen"
 import GlucosaScreen from "../screens/Glucosa/GlucosaScreen"
 import { HistoryScreen } from "../screens/HistoryScreen/HistoryScreen"
 
-
 const Stack = createNativeStackNavigator<AppStackParamList>()
 
 const AppNavigator = () => {
