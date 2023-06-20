@@ -3,18 +3,18 @@ import { PropsWithChildren } from 'react'
 
 const AppThemeProvider = ({children}: PropsWithChildren) =>{
 
-   const {colors} = extendTheme({})
+  const {colors} = extendTheme({})
 
-   const customTheme = extendTheme({
+  const customTheme = extendTheme({
       colors: {
-         primary: colors.darkBlue,
-         secondary: colors.dark,
+        primary: colors.darkBlue,
+        secondary: colors.dark,
       },
-   })
+  })
 
-   return(
+  return(
       <NativeBaseProvider theme={customTheme}>
-         {children}
+        {children}
       </NativeBaseProvider>)
 }
 
