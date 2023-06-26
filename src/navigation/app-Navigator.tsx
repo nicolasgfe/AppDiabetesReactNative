@@ -4,6 +4,8 @@ import { useTheme } from "native-base"
 import HomeScreen from "../screens/Home/HomeScreen"
 import GlucosaScreen from "../screens/Glucosa/GlucosaScreen"
 import { HistoryScreen } from "../screens/HistoryScreen/HistoryScreen"
+import { ExercisesHintScreen } from "../screens/HintScreenExercises"
+import { NutritionHintScreen } from "../screens/HintScreenNutrition"
 
 const Stack = createNativeStackNavigator<AppStackParamList>()
 
@@ -22,6 +24,8 @@ const AppNavigator = () => {
         <Stack.Screen name="HistoryScreen" component={HistoryScreen}/>
         {/* <Stack.Screen name="Register" component={RegisterScreen}/> */}
         {/*<Stack.Screen name='Glucose' component={GlucosaScreen}/> */}
+        <Stack.Screen name="ExerciseHints" component={ExercisesHintScreen}/>
+        <Stack.Screen name="NutritionHints" component={NutritionHintScreen}/>
       </Stack.Navigator>
   )
 }

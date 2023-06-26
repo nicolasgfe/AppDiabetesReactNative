@@ -17,7 +17,8 @@ export const LinksContainer = styled.View`
   margin-left: 10px;
   margin-right: 10px;
 `
-export const TipsBox = styled.View`
+
+export const HintsBox = styled.View`
     margin-top: 5px;
     width: 95%;
     height: 150px;
@@ -29,7 +30,7 @@ export const TipsBox = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-  font-size: 16;
+  font-size: 16px;
   color: #000000;
   font-family: fantasy;
 `
