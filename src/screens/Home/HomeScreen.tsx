@@ -8,15 +8,19 @@ import { AppNavigatorProps } from "../../navigation";
 
 const HomeScreen = () => {
 
-  const navigator = useNavigation<AppNavigatorProps>()
+  const navigation = useNavigation<AppNavigatorProps>()
 
+  const openHistoryScreen = () => {
+    navigation.navigate('HistoryScreen');
+  };
+  
   const openExerciseHintScreen = () => {
-    navigator.navigate("ExerciseHints")
-  }
+    navigation.navigate("ExerciseHints")
+  };
 
   const openNutritionHintScreen = () => {
-    navigator.navigate("NutritionHints")
-  }
+    navigation.navigate("NutritionHints")
+  };
 
   return(
     <>
@@ -31,7 +35,7 @@ const HomeScreen = () => {
       <LinksContainer>
         <Link>O que é glicemia?</Link>
         <Spacer />
-        <Link>Meu histórico de medições</Link>
+        <Link onPress={openHistoryScreen}>Meu histórico de medições</Link>
       </LinksContainer>
 
       <Label>Dicas de exercícios:</Label>
