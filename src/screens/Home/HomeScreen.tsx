@@ -3,8 +3,17 @@ import { Container, Title, Label, MainBox, TipsBox, LinksContainer } from "./Sty
 import { Link,Text,  Spacer } from "native-base";
 import ExercisesHintScreen from "../HintScreenExercises/ExerciseHintScreen";
 import NutritionHintScreen from "../HintScreen/NutritionHintScreen";
+import { useNavigation } from "@react-navigation/native";
+import { AppNavigatorProps } from "../../navigation";
 
 const HomeScreen = () => {
+  const navigation = useNavigation<AppNavigatorProps>();
+
+  const openHistoryScreen = () => {
+    navigation.navigate('HistoryScreen');
+  };
+
+
   return(
     <>
     <Text> GLICEMIA - ÚLTIMA MEDIÇÃO </Text>
@@ -18,7 +27,7 @@ const HomeScreen = () => {
       <LinksContainer>
         <Link>O que é glicemia?</Link>
         <Spacer />
-        <Link>Meu histórico de medições</Link>
+        <Link onPress={openHistoryScreen}>Meu histórico de medições</Link>
       </LinksContainer>
 
       <Label>   Dicas de exercícios:</Label>
