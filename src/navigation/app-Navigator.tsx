@@ -4,6 +4,7 @@ import { useTheme } from "native-base"
 import HomeScreen from "../screens/Home/HomeScreen"
 import GlucosaScreen from "../screens/Glucosa/GlucosaScreen"
 import { HistoryScreen } from "../screens/HistoryScreen/HistoryScreen"
+import NutritionHintScreen from "../screens/HintScreen/NutritionHintScreen"
 
 const Stack = createNativeStackNavigator<AppStackParamList>()
 
@@ -19,9 +20,11 @@ const AppNavigator = () => {
   return(
       <Stack.Navigator screenOptions={navigatorScreenOptions} initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen}/>
-        <Stack.Screen name="HistoryScreen" component={HistoryScreen}/>
+        <Stack.Screen name="History" component={HistoryScreen}/>
         {/* <Stack.Screen name="Register" component={RegisterScreen}/> */}
-        {/*<Stack.Screen name='Glucose' component={GlucosaScreen}/> */}
+        <Stack.Screen name="Glucose" component={GlucosaScreen}/>
+        <Stack.Screen name="Exercise_tips" component={NutritionHintScreen}/>
+        <Stack.Screen name="Nutrition_tips" component={NutritionHintScreen}/>
       </Stack.Navigator>
   )
 }
