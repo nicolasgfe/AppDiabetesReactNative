@@ -33,9 +33,3 @@ Nicolas Gasperin Fernandes
 @VivianePecenin
 Viviane Cristina Pecenin
 
-
-- Nome do participante 7
-- Nome do participante 8
-- Nome do participante 9
-
-O repositório do grupo pode ser acessado através do link: [INSERIR LINK AQUI]
