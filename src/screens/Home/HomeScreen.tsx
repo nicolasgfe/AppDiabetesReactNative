@@ -1,8 +1,8 @@
 import React from "react"
-import { Container, Title, Label, MainBox, TipsBox, LinksContainer } from "./Style";
-import { Link,Text,  Spacer } from "native-base";
-import ExercisesHintScreen from "../HintScreenExercises/ExerciseHintScreen";
-import NutritionHintScreen from "../HintScreen/NutritionHintScreen";
+import { Container, Title, Label, MainBox, LinksContainer, HintsBox } from "./Style";
+import { Link, Text, Spacer } from "native-base";
+import { ExercisesHintScreen } from "../HintScreenExercises";
+import { NutritionHintScreen } from "../HintScreenNutrition";
 import { useNavigation } from "@react-navigation/native";
 import { AppNavigatorProps } from "../../navigation";
 
@@ -44,9 +44,9 @@ const HomeScreen = () => {
       </LinksContainer>
 
       <Label>Dicas de exercícios:</Label>
-      <TipsBox>
+      <HintsBox>
         <ExercisesHintScreen />
-      </TipsBox>
+      </HintsBox>
 
       <LinksContainer>
         <Spacer />
@@ -55,15 +55,9 @@ const HomeScreen = () => {
       
 
       <Label>Dicas de nutrição:</Label>
-      <TipsBox>
+      <HintsBox>
         <NutritionHintScreen />
-      </TipsBox>
-
-      <LinksContainer>
-        <Spacer />
-        <Link onPress={openNutritionHintScreen}>Ver mais dicas</Link>
-      </LinksContainer>
-
+      </HintsBox>
     </Container>
     </>
   )

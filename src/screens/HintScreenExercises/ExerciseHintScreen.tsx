@@ -1,4 +1,4 @@
-import { FlatList } from "native-base"
+import { Container, FlatList, Link } from "native-base"
 import { useCallback } from "react";
 import { ListRenderItemInfo } from "react-native/types";
 import ExerciseHintEntry from "./FakeExerciseHintModel/FakeExerciseHintEntry";
@@ -16,15 +16,15 @@ const renderEntry = useCallback(({ item }: ListRenderItemInfo<ExerciseHintEntry>
 const hintKeyExtractor = (_: ExerciseHintEntry, index: number) => index.toString()
 
 const ExercisesHintScreen = () => {
-    return (
-        <FlatlistContainer>
-            <FlatList
-                data={FAKE_DATA}
-                renderItem={({ item }) => <ExerciseHintItem exerciseHintEntry={item} />}
-                keyExtractor={hintKeyExtractor}
-            />
-        </FlatlistContainer>
-    )
+  return (
+    <FlatlistContainer>
+      <FlatList
+        data={FAKE_DATA}
+        renderItem={renderEntry}
+        keyExtractor={hintKeyExtractor}
+      />
+    </FlatlistContainer>
+  )
 }
 
 export default ExercisesHintScreen;
