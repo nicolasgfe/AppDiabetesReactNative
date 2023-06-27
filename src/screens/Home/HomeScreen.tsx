@@ -7,20 +7,25 @@ import { useNavigation } from "@react-navigation/native";
 import { AppNavigatorProps } from "../../navigation";
 
 const HomeScreen = () => {
-
-  const navigation = useNavigation<AppNavigatorProps>()
+  const navigation = useNavigation<AppNavigatorProps>();
 
   const openHistoryScreen = () => {
-    navigation.navigate('HistoryScreen');
+    navigation.navigate('History');
   };
-  
+
+  const openGlucosaScreen = () => {
+    navigation.navigate('Glucose');
+  };
+
   const openExerciseHintScreen = () => {
-    navigation.navigate("ExerciseHints")
+    navigation.navigate('Exercise_tips');
   };
 
   const openNutritionHintScreen = () => {
-    navigation.navigate("NutritionHints")
+    navigation.navigate('Nutrition_tips');
   };
+
+
 
   return(
     <>
@@ -33,7 +38,7 @@ const HomeScreen = () => {
       </MainBox>
 
       <LinksContainer>
-        <Link>O que é glicemia?</Link>
+        <Link onPress={openGlucosaScreen}>O que é glicemia?</Link>
         <Spacer />
         <Link onPress={openHistoryScreen}>Meu histórico de medições</Link>
       </LinksContainer>
@@ -42,24 +47,20 @@ const HomeScreen = () => {
       <HintsBox>
         <ExercisesHintScreen />
       </HintsBox>
-      <Container>
-        <Link onPress={openExerciseHintScreen}>
-          Veja mais dicas
-        </Link>
-      </Container>
+
+      <LinksContainer>
+        <Spacer />
+        <Link onPress={openExerciseHintScreen}>Ver mais dicas</Link>
+      </LinksContainer>
+      
 
       <Label>Dicas de nutrição:</Label>
       <HintsBox>
         <NutritionHintScreen />
       </HintsBox>
-      <Container>
-        <Link onPress={openNutritionHintScreen}>
-          Veja mais dicas
-        </Link>
-      </Container>
     </Container>
     </>
   )
 }
 
-export default HomeScreen;
+export default HomeScreen;
