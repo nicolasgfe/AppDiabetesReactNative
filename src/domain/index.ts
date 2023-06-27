@@ -3,5 +3,5 @@ import type { DiabetesEntryDto, RegisterDiabetesEntryDto } from "./DiabetesEntry
 export {
   DiabetesEntryDto,
   RegisterDiabetesEntryDto,
-  
+
 }

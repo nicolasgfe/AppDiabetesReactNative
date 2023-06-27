@@ -27,40 +27,39 @@ const HomeScreen = () => {
 
 
 
-  return(
+  return (
     <>
-    <Text> GLICEMIA - ÚLTIMA MEDIÇÃO </Text>
-    <Container>
-      <Title> GLICEMIA - ÚLTIMA MEDIÇÃO </Title>
+      <Container>
+        <Title> GLICEMIA - ÚLTIMA MEDIÇÃO </Title>
 
-      <MainBox>
-      
-      </MainBox>
+        <MainBox>
 
-      <LinksContainer>
-        <Link onPress={openGlucosaScreen}>O que é glicemia?</Link>
-        <Spacer />
-        <Link onPress={openHistoryScreen}>Meu histórico de medições</Link>
-      </LinksContainer>
+        </MainBox>
 
-      <Label>Dicas de exercícios:</Label>
-      <HintsBox>
-        <ExercisesHintScreen />
-      </HintsBox>
+        <LinksContainer>
+          <Link onPress={openGlucosaScreen}>O que é glicemia?</Link>
+          <Spacer />
+          <Link onPress={openHistoryScreen}>Meu histórico de medições</Link>
+        </LinksContainer>
 
-      <LinksContainer>
-        <Spacer />
-        <Link onPress={openExerciseHintScreen}>Ver mais dicas</Link>
-      </LinksContainer>
-      
+        <Label>Dicas de exercícios:</Label>
+        <HintsBox>
+          <ExercisesHintScreen />
+        </HintsBox>
 
-      <Label>Dicas de nutrição:</Label>
-      <HintsBox>
-        <NutritionHintScreen />
-      </HintsBox>
-    </Container>
+        <LinksContainer>
+          <Spacer />
+          <Link onPress={openExerciseHintScreen}>Ver mais dicas</Link>
+        </LinksContainer>
+
+
+        <Label>Dicas de nutrição:</Label>
+        <HintsBox>
+          <NutritionHintScreen />
+        </HintsBox>
+      </Container>
     </>
   )
 }
 
-export default HomeScreen;
+export default HomeScreen;
