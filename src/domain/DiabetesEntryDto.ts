@@ -3,7 +3,7 @@ export interface RegisterDiabetesEntryDto {
   date: Date;
 }
 
-export interface DiabetesEntryDto extends RegisterDiabetesEntryDto{
+export interface DiabetesEntryDto extends RegisterDiabetesEntryDto {
   id: string,
-  
+
 }

@@ -6,12 +6,12 @@ import { ExerciseHintItem } from "./ExerciseItem";
 import { FlatlistContainer } from "./ExerciseItem/Styles";
 
 const FAKE_DATA = [
-    new ExerciseHintEntry(1, "titulo1", "descrição1"),
-    new ExerciseHintEntry(2, "titulo2", "descrição2")
+  new ExerciseHintEntry(1, "titulo1", "descrição1"),
+  new ExerciseHintEntry(2, "titulo2", "descrição2")
 ]
 
 const renderEntry = useCallback(({ item }: ListRenderItemInfo<ExerciseHintEntry>) =>
-    <ExerciseHintItem exerciseHintEntry={item} />, [])
+  <ExerciseHintItem exerciseHintEntry={item} />, [])
 
 const hintKeyExtractor = (_: ExerciseHintEntry, index: number) => index.toString()
 

@@ -6,7 +6,7 @@ export type AppStackParamList = {
   Glucose: undefined,
   Exercise_tips: undefined,
   Nutrition_tips: undefined,
-  
+
 }
 
 export type AppNavigatorProps = NativeStackNavigationProp<AppStackParamList>

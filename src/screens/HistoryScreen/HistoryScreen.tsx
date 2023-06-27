@@ -22,29 +22,17 @@ const HistoryScreen = () => {
       date: "07/06/2023"
     },
   ]
-  
+
   return (
     <SafeAreaView >
       <FlatList
         data={data}
-        renderItem={({item}) => <Item medida={item.medida} date={item.date}/>}
+        renderItem={({ item }) => <Item medida={item.medida} date={item.date} />}
         keyExtractor={item => item.id}
       />
-      
+
     </SafeAreaView>
   );
-
-  // return(
-  //   <>
-  //   <Text>Eaeee</Text>
-  //     {data.map((data) => {
-  //       <>
-  //         <Text>123</Text>
-  //         <Item data={data}/>
-  //       </>
-  //     })}
-  //   </>
-  // )
 }
 
 export {
