@@ -1,4 +1,4 @@
-import { Divider, HStack, Row, Spacer, Text, View } from "native-base"
+import { Spacer } from "native-base"
 import { ItemProps } from "./interface";
 import { Container, InfoRigth, Items, TextMedida, TextRigth } from "./style";
 

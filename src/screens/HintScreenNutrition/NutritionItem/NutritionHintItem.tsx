@@ -3,7 +3,7 @@ import { memo } from "react"
 import { NutritionHintItemProps } from "./interface"
 import { HintContainer } from "./Styles"
 
-const NutritionHintItem = ({ nutritionHintEntry }: NutritionHintItemProps ) => {
+const NutritionHintItem = ({ nutritionHintEntry }: NutritionHintItemProps) => {
     return (
         <HintContainer>
             <Text>{nutritionHintEntry.Title}</Text>
