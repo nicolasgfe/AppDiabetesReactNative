@@ -28,6 +28,7 @@ build/
 .history/src/*
 .idea
 .gradle
+.history
 local.properties
 *.iml
 *.hprof

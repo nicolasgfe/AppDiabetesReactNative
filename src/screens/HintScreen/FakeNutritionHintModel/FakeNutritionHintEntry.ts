@@ -3,7 +3,7 @@
 // Quando o banco ficar pronto, deletar esse modelo
 // Usar um modelo realm apropriado
 
-class HintEntry {
+class NutritionHintEntry {
     private id: number;
     private title: string;
     private description: string;
@@ -27,4 +27,4 @@ class HintEntry {
     }
 }
 
-export default HintEntry
+export default NutritionHintEntry;
