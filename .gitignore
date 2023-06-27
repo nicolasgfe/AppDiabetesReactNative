@@ -25,6 +25,7 @@ ios/.xcode.env.local
 # Android/IntelliJ
 #
 build/
+.history/src/*
 .idea
 .gradle
 .history

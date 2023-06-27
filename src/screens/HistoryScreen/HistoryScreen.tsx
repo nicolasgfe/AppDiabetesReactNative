@@ -24,14 +24,14 @@ const HistoryScreen = () => {
   ]
   
   return (
-      <SafeAreaView >
-        <FlatList
-          data={data}
-          renderItem={({item}) => <Item medida={item.medida} date={item.date}/>}
-          keyExtractor={item => item.id}
-        />
-        
-      </SafeAreaView>
+    <SafeAreaView >
+      <FlatList
+        data={data}
+        renderItem={({item}) => <Item medida={item.medida} date={item.date}/>}
+        keyExtractor={item => item.id}
+      />
+      
+    </SafeAreaView>
   );
 
   // return(
